@@ -1,0 +1,15 @@
+[project]
+name = "org_enums"
+version = "0.1.0"
+description = "Shared StrEnum definitions for organization projects"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Nick Elsey"}]
+dependencies = [
+    "pytest>=8.4.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
