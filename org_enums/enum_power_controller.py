@@ -1,4 +1,4 @@
-"""Holds enumerations for the PowerController application that are also used by downstream projects."""
+"""Holds enumerations for the PowerController application that are also used by various downstream projects."""
 
 from enum import StrEnum
 
