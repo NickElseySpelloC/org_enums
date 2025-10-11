@@ -70,3 +70,4 @@ class StateReasonOff(StrEnum):
     SHUTDOWN = "System is shutting down"
     DEVICE_OFFLINE = "Device is offline"
     MIN_OFF_TIME = "Minimum off time has not yet elapsed"
+    METER_RESET = "Meter reading has reset"
