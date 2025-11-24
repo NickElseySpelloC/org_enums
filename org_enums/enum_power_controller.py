@@ -71,3 +71,4 @@ class StateReasonOff(StrEnum):
     DEVICE_OFFLINE = "Device is offline"
     MIN_OFF_TIME = "Minimum off time has not yet elapsed"
     METER_RESET = "Meter reading has reset"
+    TEMP_PROBE_CONSTRAINT = "A temperature probe constraint requires the output to be off"
