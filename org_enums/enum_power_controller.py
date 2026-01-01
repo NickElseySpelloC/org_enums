@@ -26,6 +26,7 @@ class SystemState(StrEnum):
     INPUT_OVERRIDE = "Input has overridden the mode"
     APP_OVERRIDE = "App has overridden the mode"
     AUTO = "Automatic control based on schedule or best price"
+    EXTERNAL_CONTROL = "External system is controlling the output"
 
 
 class RunPlanMode(StrEnum):
@@ -54,6 +55,8 @@ class StateReasonOn(StrEnum):
     INPUT_SWITCH_ON = "Device input has overridden the mode to on"
     ACTIVE_RUN_PLAN = "Run plan dictates that the output should be on"
     MIN_ON_TIME = "Minimum on time has not yet elapsed"
+    CHARGING_STARTED = "Tesla charging has started"
+    POWER_INCREASE = "Power usage has increased beyond the threshold"
 
 
 class StateReasonOff(StrEnum):
@@ -72,3 +75,5 @@ class StateReasonOff(StrEnum):
     MIN_OFF_TIME = "Minimum off time has not yet elapsed"
     METER_RESET = "Meter reading has reset"
     TEMP_PROBE_CONSTRAINT = "A temperature probe constraint requires the output to be off"
+    CHARGING_ENDED = "Tesla charging has finished"
+    POWER_DECREASE = "Power usage has decreased below the threshold"
