@@ -57,6 +57,7 @@ class StateReasonOn(StrEnum):
     MIN_ON_TIME = "Minimum on time has not yet elapsed"
     CHARGING_STARTED = "Tesla charging has started"
     POWER_INCREASE = "Power usage has increased beyond the threshold"
+    DAY_START = "A new day has started"
 
 
 class StateReasonOff(StrEnum):
