@@ -1,6 +1,6 @@
 [project]
 name = "org_enums"
-version = "1.0.3"
+version = "1.0.4"
 description = "Shared StrEnum definitions for organization projects"
 readme = "README.md"
 requires-python = ">=3.11"

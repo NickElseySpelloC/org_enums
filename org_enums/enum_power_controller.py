@@ -56,6 +56,7 @@ class StateReasonOn(StrEnum):
     INPUT_SWITCH_ON = "Device input has overridden the mode to on"
     ACTIVE_RUN_PLAN = "Run plan dictates that the output should be on"
     MIN_ON_TIME = "Minimum on time has not yet elapsed"
+    MAX_OFF_TIME = "Maximum off time has elapsed"
     CHARGING_STARTED = "Tesla charging has started"
     POWER_INCREASE = "Power usage has increased beyond the threshold"
     DAY_START = "A new day has started"
