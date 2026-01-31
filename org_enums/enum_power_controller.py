@@ -45,6 +45,7 @@ class RunPlanStatus(StrEnum):
     """Status of the run plan creation."""
     NOTHING = "The required_hours were zero, so the run plan is empty."
     FAILED = "Unable to create the run plan. Could not allocate all required priority hours."
+    BELOW_MINIMUM = "The run plan was only partially filled, not all the priority hours were allocated"
     PARTIAL = "The run plan was only partially filled, but the priority hours were allocated."
     READY = "The run plan was filled successfully."
 
