@@ -27,6 +27,7 @@ class SystemState(StrEnum):
     APP_OVERRIDE = "App has overridden the mode"
     AUTO = "Automatic control based on schedule or best price"
     EXTERNAL_CONTROL = "External system is controlling the output"
+    UPS_OVERRIDE = "Unhealthy UPS condition has overridden the mode"
 
 
 class RunPlanMode(StrEnum):
