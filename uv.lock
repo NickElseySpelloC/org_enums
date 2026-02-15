@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.11"
 
 [[package]]
@@ -67,7 +67,7 @@ wheels = [
 
 [[package]]
 name = "org-enums"
-version = "0.1.1"
+version = "1.0.4"
 source = { editable = "." }
 dependencies = [
     { name = "pytest" },

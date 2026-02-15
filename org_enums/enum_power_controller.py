@@ -60,6 +60,7 @@ class StateReasonOn(StrEnum):
     CHARGING_STARTED = "Tesla charging has started"
     POWER_INCREASE = "Power usage has increased beyond the threshold"
     DAY_START = "A new day has started"
+    UPS_UNHEALTHY = "Unhealthy UPS condition requires the output to be on"
 
 
 class StateReasonOff(StrEnum):
@@ -80,3 +81,4 @@ class StateReasonOff(StrEnum):
     TEMP_PROBE_CONSTRAINT = "A temperature probe constraint requires the output to be off"
     CHARGING_ENDED = "Tesla charging has finished"
     POWER_DECREASE = "Power usage has decreased below the threshold"
+    UPS_UNHEALTHY = "Unhealthy UPS condition requires the output to be off"
