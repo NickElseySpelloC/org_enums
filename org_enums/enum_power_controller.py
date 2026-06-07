@@ -28,6 +28,7 @@ class SystemState(StrEnum):
     AUTO = "Automatic control based on schedule or best price"
     EXTERNAL_CONTROL = "External system is controlling the output"
     UPS_OVERRIDE = "Unhealthy UPS condition has overridden the mode"
+    DISABLED = "Output has been disabled in the configuration"
 
 
 class RunPlanMode(StrEnum):
@@ -84,3 +85,4 @@ class StateReasonOff(StrEnum):
     CHARGING_ENDED = "Tesla charging has finished"
     POWER_DECREASE = "Power usage has decreased below the threshold"
     UPS_UNHEALTHY = "Unhealthy UPS condition requires the output to be off"
+    DISABLED = "Output has been disabled in the configuration"
