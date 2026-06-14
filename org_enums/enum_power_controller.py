@@ -29,6 +29,7 @@ class SystemState(StrEnum):
     EXTERNAL_CONTROL = "External system is controlling the output"
     UPS_OVERRIDE = "Unhealthy UPS condition has overridden the mode"
     DISABLED = "Output has been disabled in the configuration"
+    WEATHER_OVERRIDE = "Weather condition has overridden the mode"
 
 
 class RunPlanMode(StrEnum):
@@ -64,6 +65,7 @@ class StateReasonOn(StrEnum):
     POWER_INCREASE = "Power usage has increased beyond the threshold"
     DAY_START = "A new day has started"
     UPS_UNHEALTHY = "Unhealthy UPS condition requires the output to be on"
+    WEATHER_OVERRIDE = "Weather condition has overridden the mode to on"
 
 
 class StateReasonOff(StrEnum):
@@ -86,3 +88,4 @@ class StateReasonOff(StrEnum):
     POWER_DECREASE = "Power usage has decreased below the threshold"
     UPS_UNHEALTHY = "Unhealthy UPS condition requires the output to be off"
     DISABLED = "Output has been disabled in the configuration"
+    WEATHER_OVERRIDE = "Weather condition has overridden the mode to off"
